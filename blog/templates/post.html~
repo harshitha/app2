@@ -1,15 +1,1 @@
-{% extends "base.html" %}
 
-{% block content %}
-
-<h2><a href="/blog/{{signal.id}}">{{ signal.title }}</a></h2>
-
-<div class="signal_meta">
-  on {{ signal.created }}
-</div>
-
-<div class="signal_body">
-  {{ signal.body|safe|linebreaks }}
-</div>
-
-{% endblock %}
